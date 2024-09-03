@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link favicon icon  -->
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <!-- link favicon icon end -->
+    <title>Linkdin Home</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="./index.html" class="logo"><img src="./image/logo.png" alt=""></a>
+
+
+            <div class="search-box">
+                <img src="./image/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="index.html" class="active-link"><img src="./image/home.png" alt=""> <span>Home</span></a></li> 
+                <li><a href="#"><img src="./image/network.png" alt=""> <span>My Network</span></a></li> 
+                <li><a href="#"><img src="./image/jobs.png" alt=""> <span>Jobs</span></a></li> 
+                <li><a href="#"><img src="./image/message.png" alt=""> <span>Messaging</span></a></li> 
+                <li><a href="#"><img src="./image/notification.png" alt=""> <span>Notification</span></a></li> 
+
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./image/user-1.jpg" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+<!---------- profile-drop-down-menu ------------->
+<div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+        <div class="user-info">
+            <img src="./image/user-1.jpg">
+            <div>
+                <h3>Gourab bhattacharjee</h3>
+                <a href="./profile.html"> See your profile</a>
+            </div>
+        </div>
+        <hr>
+        <a href="#" class="profile-menu-link">
+            <img src="./image/feedback.png" >
+            <p>Give Feedback</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="./image/setting.png" >
+            <p>Settings & Privacy</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="./image/help.png" >
+            <p>Help & Support</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="./image/display.png" >
+            <p>display & Accessibility</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="./image/logout.png" >
+            <p>Logout</p>
+            <span>></span>
+        </a>
+    </div>
+</div>
+
+    </nav>
+
+<!---------- navbar close ------------->
+
+<div class="container">
+
+    <!------------ left-sidebar --------------->
+    <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+            <img src="./image/cover.jpeg" width="100%">
+            <div class="sidebar-profile-info">
+                <img src="./image/user-1.jpg" alt="">
+                <h1>GOURAB BHATTACHARJEE</h1>
+                <h3>Web Developer</h3>
+                <ul>
+                    <li>Your profile views <span>512</span></li>
+                    <li>Your post views <span>896</span></li>
+                    <li>Your connection <span>507</span></li>
+                </ul>
+            </div>
+            <div class="sidebar-profile-link">
+                <a href="#"><img src="./image/items.png" alt=""> My Items</a>
+                <a href="#"><img src="./image/premium.png" alt=""> Try Premium</a>
+            </div>
+
+        </div>
+
+        <div class="sidebar-activity" id="sidebar-activity">
+            <h3>RECENT</h3>
+            <a href="#"><img src="./image/recent.png" alt="">Web Development</a>
+            <a href="#"><img src="./image/recent.png" alt="">User Interface</a>
+            <a href="#"><img src="./image/recent.png" alt="">Online Learning</a>
+            <a href="#"><img src="./image/recent.png" alt="">Learn Online</a>
+            <a href="#"><img src="./image/recent.png" alt="">Code Better</a>
+            <a href="#"><img src="./image/recent.png" alt="">Group Learning</a>
+            <h3>GROUPS</h3>
+            <a href="#"><img src="./image/group.png" alt="">Web Design Group</a>
+            <a href="#"><img src="./image/group.png" alt="">HTML & CSS Learners</a>
+            <a href="#"><img src="./image/group.png" alt="">Python & Javascript Group</a>
+            <a href="#"><img src="./image/group.png" alt="">Learn Coding Online</a>
+            <h3>HASHTAG</h3>
+            <a href="#"><img src="./image/hashtag.png" alt="">webdevelopment</a>
+            <a href="#"><img src="./image/hashtag.png" alt="">userinterface</a>
+            <a href="#"><img src="./image/hashtag.png" alt="">Onlinelearning</a>
+            <div class="dicover-more-link">
+                <a href="#">Discover more</a>
+            </div>
+        </div>
+        
+        <p id="show-more-link"onclick="toggleActivity()">Show More <b>+</b></p>
+
+    </div>
+
+
+
+
+
+
+    <!------------ main-content --------------->
+    <div class="main-content">
+        <div class="create-post">
+            <div class="create-post-input">
+                <img src="./image/user-1.jpg" alt="">
+                <textarea rows="2" placeholder="write a post"></textarea>
+            </div>
+            <div class="create-post-links">
+                <li><img src="./image/photo.png" alt="">Photo</li>
+                <li><img src="./image/video.png" alt="">Video</li>
+                <li><img src="./image/event.png" alt="">event</li>
+                <li>Post</li>
+            </div>
+        </div>
+        <div class="sort-by">
+            <hr>
+            <p>Sort by: <span>top <img src="./image/down-arrow.png" alt=""></span></p>
+        </div>
+
+        <div class="post">
+            <div class="post-author">
+                <img src="./image/user-2.png">
+                <div>
+                    <h1>Tamalica Choudhary</h1>
+                    <small>Back-end Developer </small>
+                    <small>2 hours ago</small>
+                </div>
+            </div>
+            <p>🏆 Excited to share a milestone achieved in the TCS Codevita Season 11 2024! <br>🚀
+                🌍 Securing a global rank of 2794 among thousands of talented participants is truly an honor. </br>
+            </p>
+            <img src="./image/tamalica-1.png" width = "100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="./image/thumbsup.png" alt="">
+                    <img src="./image/love.png" alt="">
+                    <img src="./image/clap.png" alt="">
+                    <span class="liked-user">Abhinav Mishra and 76 others</span>
+                </div>
+                <div>
+                    <span>22 comments &middot; 40 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="./image/user-1.jpg" class="post-activity-user-icon">
+                    <img src="./image/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/comment.png">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+
+
+            
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="./image/user-3.png">
+                <div>
+                    <h1>Nidhali Jaswal</h1>
+                    <small>Motivational Speeker </small>
+                    <small>2 hours ago</small>
+                </div>
+            </div>
+            <p>The success of every website depends on search engine
+                optimisation and digital marketing strategy. If you are on
+                first page of all major search engines then you are ahead among
+                your competitors.
+            </p>
+            <img src="./image/post-image-2.png" width = "100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="./image/thumbsup.png" alt="">
+                    <img src="./image/love.png" alt="">
+                    <img src="./image/clap.png" alt="">
+                    <span class="liked-user">Abhinav Mishra and 76 others</span>
+                </div>
+                <div>
+                    <span>22 comments &middot; 40 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="./image/user-1.jpg" class="post-activity-user-icon">
+                    <img src="./image/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/comment.png">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+
+
+            
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="./image/user-4.png">
+                <div>
+                    <h1>Negi omal</h1>
+                    <small>UI/UX Developer  </small>
+                    <small>3 hours ago</small>
+                </div>
+            </div>
+            <p>The success of every website depends on search engine
+                optimisation and digital marketing strategy. If you are on
+                first page of all major search engines then you are ahead among
+                your competitors.
+            </p>
+            <img src="./image/post-image-3.png" width = "100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="./image/thumbsup.png" alt="">
+                    <img src="./image/love.png" alt="">
+                    <img src="./image/clap.png" alt="">
+                    <span class="liked-user">Abhinav Mishra and 76 others</span>
+                </div>
+                <div>
+                    <span>22 comments &middot; 40 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="./image/user-1.jpg" class="post-activity-user-icon">
+                    <img src="./image/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/comment.png">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+
+
+            
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="./image/user-5.png">
+                <div>
+                    <h1>Devid </h1>
+                    <small>Founder and CEO in insofy </small>
+                    <small>4 hours ago</small>
+                </div>
+            </div>
+            <p>The success of every website depends on search engine
+                optimisation and digital marketing strategy. If you are on
+                first page of all major search engines then you are ahead among
+                your competitors.
+            </p>
+            <img src="./image/post-image-4.png" width = "100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="./image/thumbsup.png" alt="">
+                    <img src="./image/love.png" alt="">
+                    <img src="./image/clap.png" alt="">
+                    <span class="liked-user">Abhinav Mishra and 76 others</span>
+                </div>
+                <div>
+                    <span>22 comments &middot; 40 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="./image/user-1.jpg" class="post-activity-user-icon">
+                    <img src="./image/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/comment.png">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="./image/send.png">
+                    <span>Send</span>
+                </div>
+            </div>  
+        </div>
+
+
+    </div>
+    <!------------ right-sidebar --------------->
+    <div class="right-sidebar">
+        <div class="sidebar-news">
+            <img src="./image/more.png" class="info-icon">
+            <h3>Trending News</h3>
+            <a href="#">High demand for skilled manpower</a>
+            <span>1d ago &middot ; 10,934 readers</span>
+
+            <a href="#">Careers growing horizontally too</a>
+            <span>19h ago &middot ; 10,934 readers</span>
+
+            <a href="#">Less work visa for us, more for us</a>
+            <span>1d ago &middot ; 27,290 readers</span>
+
+            <a href="#">More hiring = higher confidence?</a>
+            <span>18h ago &middot ; 8,208 readers</span>
+
+            <a href="#">Gautam Adani is the is the world third richest</a>
+            <span>12h ago &middot ; 4,205 readers</span>
+
+            <a href="#" class="read-more-links">Read More</a>
+
+        </div>
+
+        <div class="sidebar-ad">
+            <small>Ad &middot &middot &middot</small>
+            <p>Master the 5 principles of web design</p>
+            <div>
+                <img src="./image/user-1.png" alt="">
+                <img src="./image/mi-logo.png" alt="">
+            </div>
+            <b>Brand and Demand in Xiaomi</b>
+            <a href="https://www.mi.com/in/store/" class="ad-link"> Learn More</a>
+        </div>
+
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <img src="./image/logo.png" >
+                    <p>Linkedup &#169; 2024. All right reserved</p> 
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<script>
+    let profileMenu = document.getElementById("profileMenu");
+    
+    function toggleMenu(){
+        profileMenu.classList.toggle("open-menu");
+    }
+</script>
+
+<script>
+    let sideActivity = document.getElementById("sidebar-activity");
+    let moreLink = document.getElementById("showMoreLink");
+
+    function toggleActivity(){
+        sideActivity.classList.toggle("open-activity");
+
+        if(sideActivity.classListn.contains("show-more-link")){
+            moreLink.innerHTML = "Show Less <b>-</b>";
+        }
+        else{
+            moreLink.innerHTML = "Show more <b>+</b>";
+        }
+    }
+</script>
+</body>
+</html>
