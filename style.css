@@ -482,7 +482,7 @@ a{
 .profile-menu-wrap{
     position: absolute;
     top: 100%;
-    right: 5%;
+    right: 4%;
     width: 320px;
     max-height: 0;
     overflow: hidden;
@@ -493,8 +493,8 @@ a{
     max-height: 400px;
 }
 .profile-menu{
-    background: #222;
-    color: #fff;
+    background: #ffffff;
+    color: #060606;
     padding: 20px;
     margin: 10px;
 }
@@ -513,7 +513,7 @@ a{
     padding-bottom: 7px;
 }
 .user-info a{
-    color: #c9dbf8;
+    color: #0699e2;
     font-size: 13px;
     
 }
@@ -522,14 +522,14 @@ a{
     border: 0;
     height: 1px;
     width: 100%;
-    background: #fff;
+    background: #080808;
     margin: 15px 0 10px;
 }
 
 .profile-menu-link{
     display: flex;
     align-items: center;
-    color: #fff;
+    color: #0d0c0c;
     margin: 12px 0;
     font-size: 14px;
 }
